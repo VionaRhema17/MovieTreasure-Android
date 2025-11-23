@@ -1,4 +1,9 @@
 package com.viona.movietreasure.data.remote.response
 
-class GenreResponse {
-}
+import com.app.movieapp.models.Genre
+import com.google.gson.annotations.SerializedName
+
+data class GenreResponse(
+    @SerializedName("genres")
+    val genres: List<Genre>
+)
